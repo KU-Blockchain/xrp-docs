@@ -39,10 +39,12 @@ Getting it initialized for the client
 Lauren wants to do a hackathon with XRP 
 ### Goal
 How to read and write out of the blockchain
+
+We will be utilizing the `gh repo clone XRPLF/xrpl-dev-portal` for referencing documentation on XRP
+
 ### Reference
 Develop a basic understanding of the XRP Ledger's consensus mechanism.
 [Documentation](https://xrpl.org/concepts.html)
-
 
 ### Key Concepts
 **Understanding what Consensus is**
