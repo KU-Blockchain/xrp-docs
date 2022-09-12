@@ -17,17 +17,6 @@ Semantic Remote Attestation Evidence on Chain
 - health records and ledgers for evidence
 -  system and local manisfests
 
-**Project Members**
-- Raj Kaura
-- Morgan Bergen
-- Tony Czajka
-
-- JayHawk for the VPN get us access to the test bed and get it set up on 
-- Virtual machines and there are two desktop boxes that are available.  
-- XRP verifier installer running 
-- Longest running bitcoin miner
-- It is updating the chain and verifying things that might be added to the chain
-
 Adam is the Research Assistence professor and does the 
 
 The system admin 
