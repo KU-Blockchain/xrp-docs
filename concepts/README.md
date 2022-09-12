@@ -1,8 +1,5 @@
 # XRP Ledger Consensus Protocol
 
-Ripple is the name of the company and the network.
-
-
 Understand the pre-requisit intro basics before diving into development on the Blockchain.  All references and info can be sourced here [XRPL Concepts Page](https://xrpl.org/intro-to-consensus.html)
 ## Network Protocols
 
@@ -41,17 +38,26 @@ Consensus protocols are a solution to the double-spend problem: the challenge of
 
 The XRP Ledger uses a consensus protocol unlike any digital asset that came before it. This protocol, known as the XRP Ledger Consensus Protocol, is designed to have the following important properties:
 
-Everyone who uses the XRP Ledger can agree on the latest state, and which transactions have occurred in which order.
-All valid transactions are processed without needing a central operator or having a single point of failure.
-The ledger can make progress even if some participants join, leave, or behave inappropriately.
-If too many participants are unreachable or misbehaving, the network fails to make progress rather than diverging or confirming invalid transactions.
-Confirming transactions does not require wasteful or competitive use of resources, unlike most other blockchain systems.
-
 Current Centralized Payment Systems are parties exchanging with an intermediary that being in this fragmented 3 Finite Automata.  Where behavior of exchnage depends on the intermediary (The Bank) to validate transactions.
 
-## XRP Ledger Consensus Protocol - Properties
+## XRP Ledger Consensus Protocol
+
+The XRP Ledger Consensus Protocol is a previously developed consensus protocol powering the XRP Ledger. It is a low-latency Byzantine agreement protocol, capable of reaching consensus without full agreement on which nodes are members of the network. We present a detailed explanation of the algorithm and derive conditions for its safety and liveness.
 
 ### Properties
 
 1.  Everyone who uses the XRP Ledger can agree on the latest state, and which transactions have occurred in which order.
 All valid transactions are processed without needing a central operator or having a single point of failure.
+
+2.  All valid transactions are processed without needing a central operator or having a single point of failure.  
+
+3.  The ledger can make new blocks even if some participants join, leave, or behave inappropriately.
+
+4.  The confimration of transactions is not a is a consensus mechanism which doe snot require any Proof of Work mining unlike other blockchain systems.  
+
+
+### Consensus Research
+
+Analysis of the XRP Ledger Consensus Protocol 
+
+A detailed and updated analysis of the XRP Ledger consensus algorithm and its safety and liveness properties.

@@ -1,11 +1,18 @@
 # XRPL
-XRPL (XRP Ledger) is a Distributed Ledger Technology, is a decentralized, public blockchain led by a global developer community.  The ledger is owned by Ripple Labs Inc.    
+
+[Analysis fo the XRP Ledger Consensus Protocol](https://arxiv.org/abs/1802.07242v1)
+
+
+The XRP Ledger Consensus Protocol is a previously developed consensus protocol powering the XRP Ledger. It is a low-latency Byzantine agreement protocol, capable of reaching consensus without full agreement on which nodes are members of the network. We present a detailed explanation of the algorithm and derive conditions for its safety and liveness.
+
+> We will be utilizing the `XRPLF/xrpl-dev-portal` for referencing documentation on XRPL
 
 ### XRP Basics
 
 **1.  What is XRP?**
 
-XRP is a Internationally recognized standarized asset/currency code validated and now compliant by ISO 20022 - ISO 2022 is under SWIFT known to be the Society for Worldwide Interbank Financial Telecommunications which provides a secure messaging system for financial transactions between participating banks.  A Currency Code is a code allocated to a currency by a Maintenance Agency under an international identification scheme as described in the latest edition of the international standard ISO "Codes for the representation of currencies and funds".
+
+XRPL (XRP Ledger) is a Distributed Ledger Technology, is a decentralized, public blockchain led by a global developer community.  The ledger is owned by Ripple Labs Inc.  XRP is a Internationally recognized standarized asset/currency code validated and now compliant by ISO 20022 - ISO 2022 is under SWIFT known to be the Society for Worldwide Interbank Financial Telecommunications which provides a secure messaging system for financial transactions between participating banks.  A Currency Code is a code allocated to a currency by a Maintenance Agency under an international identification scheme as described in the latest edition of the international standard ISO "Codes for the representation of currencies and funds".
 
 **2.  What does XRP Stand for?**
 
@@ -41,16 +48,16 @@ ISO20022 International Organization for Standardization is a single standarizati
 
 Swift is the global providor of secure financial messaging services and implements cross-border payment systems such as ISO 2022
 
-**A test repo that will review over the basics of the xrp ledger.**
+### What is the Purpose of this Repo
+
+**This is a test repo that will review over the basics of the xrp ledger**
+
+**Purpose**
 - Find out how to use a local XRP chain
 - Reading and writing to it 
 - How to create NFTs on it
 - attestation managers
 - how to swap in and out different chains
-
-> We will be utilizing the `gh repo clone XRPLF/xrpl-dev-portal` for referencing documentation on XRP
-
-### Blockchain Health Ledger
 
 Semantic Remote Attestation Evidence Health Ledger
 
@@ -60,33 +67,12 @@ Semantic Remote Attestation Evidence on Chain
 - health records and ledgers for evidence
 - system and local manisfests
 - Local instances of the XRP ledger.
-
-
-What do we need to download an XRP client.
-Getting it initialized for the client
-Lauren wants to do a hackathon with XRP 
+- What do we need to download an XRP client.
+- Getting it initialized for the client
+- Lauren wants to do a hackathon with XRP 
 ### Goal
 How to read and write out of the blockchain
 
 ### Reference
 Develop a basic understanding of the XRP Ledger's consensus mechanism.
 [Documentation](https://xrpl.org/concepts.html)
-
-### Key Concepts
-**Understanding what Consensus is**
-
-Consensus is the most important property of any decentralized payment system. In traditional centralized payment systems, one authoritative administrator gets the final say in how and when payments occur. Decentralized systems, by definition, don't have an administrator to do that. Instead, decentralized systems like the XRP Ledger define a set of rules all participants follow, so every participant can agree on the exact same series of events and their outcome at any point in time. We call this set of rules a consensus protocol.
-
-
-
-
-XRP Project
-First steps
-
-Reading and writing to it 
-How to create NFTs on it
-There’s a test bed for running attestation stuff
-Don’t rely on personal equipment… use server
-Getting set up: perry will talk to sysadmins and get people set up with accounts
-Dive into documentation
-Want to be able to read/write to XRP, create NFTs, integrate with attestation managers. Want to be able to swap in and out different chains. 
