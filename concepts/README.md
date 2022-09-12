@@ -1,6 +1,6 @@
-# XRP Ledger
+# XRP Ledger Concept Introduction
 
-**Consensus**
+## Consensus
 
 Consensus is the most important property of any decentralized payment system. In traditional centralized payment systems, one authoritative administrator gets the final say in how and when payments occur. Decentralized systems, by definition, don't have an administrator to do that. Instead, decentralized systems like the XRP Ledger define a set of rules all participants follow, so every participant can agree on the exact same series of events and their outcome at any point in time. We call this set of rules a consensus protocol.
 
@@ -15,3 +15,5 @@ If too many participants are unreachable or misbehaving, the network fails to ma
 Confirming transactions does not require wasteful or competitive use of resources, unlike most other blockchain systems.
 
 Current Centralized Payment Systems are parties exchanging with an intermediary that being in this fragmented 3 Finite Automata.  Where behavior of exchnage depends on the intermediary (The Bank) to validate transactions.
+
+##
