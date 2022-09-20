@@ -56,6 +56,8 @@ All valid transactions are processed without needing a central operator or havin
 4.  The confimration of transactions is not a is a consensus mechanism which doe snot require any Proof of Work mining unlike other blockchain systems.  
 
 
+### 
+
 ### Consensus Research
 
 Analysis of the XRP Ledger Consensus Protocol 
