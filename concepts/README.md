@@ -55,11 +55,39 @@ All valid transactions are processed without needing a central operator or havin
 
 4.  The confimration of transactions is not a is a consensus mechanism which doe snot require any Proof of Work mining unlike other blockchain systems.  
 
+### Ledger History
 
-### 
+An XRP ledger processes transactions in blocks called "ledger versions".  Each ledger version contains three pieces:
+
+**ledger version contents**
+1.  The current state of all balances and objects stored in the ledger.
+2.  The set of transactions that have been applied to the previous ledger to result in this one.
+3.  Metadata about the current ledger version
+    
+    **_ledger index_**
+    **_cyrptographic hash_**
+    
+     that uniquely identifies its contents, and information about the parent ledger that was used as a basis for building one like such.
+
+     The following is an example of a ledger version comprising of metadata, states, and transactions.
+
+    ![](https://xrpl.org/img/anatomy-of-a-ledger-simplified.svg)
+
+
+    genesis ledger with ledger index 1 ->
+    
+
+
+### Software Ecosystem
+
+1.  Apps & Services
+2.  Middleware APIs
 
 ### Consensus Research
 
 Analysis of the XRP Ledger Consensus Protocol 
 
 A detailed and updated analysis of the XRP Ledger consensus algorithm and its safety and liveness properties.
+
+
+### Apps and Services
