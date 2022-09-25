@@ -2,16 +2,169 @@
 
 [Analysis fo the XRP Ledger Consensus Protocol](https://arxiv.org/abs/1802.07242v1)
 
-Add post script file here
-
 The XRP Ledger Consensus Protocol is a previously developed consensus protocol powering the XRP Ledger. It is a low-latency Byzantine agreement protocol, capable of reaching consensus without full agreement on which nodes are members of the network. We present a detailed explanation of the algorithm and derive conditions for its safety and liveness.
 
 > We will be utilizing the `XRPLF/xrpl-dev-portal` for referencing documentation on XRPL
 
-### XRP Basics
+### XRPL Basics
+
+```JavaScript
+/**
+ * @file    primitive.js
+ * @brief   import the xrpl ledger, used to store 
+ *          all transactions and the state of the ledger
+ */
+ 
+
+const xrpl = require('xrpl');
+console.log(xrpl);
+
+```
+
+
+```console
+morgan% node primitive.js 
+{
+  BroadcastClient: [Getter],
+  Client: [Getter],
+  Wallet: [Getter],
+  keyToRFC1751Mnemonic: [Getter],
+  rfc1751MnemonicToKey: [Getter],
+  LedgerEntry: [Getter],
+  setTransactionFlagsToNumber: [Getter],
+  parseAccountRootFlags: [Getter],
+  validate: [Getter],
+  AccountSetAsfFlags: [Getter],
+  AccountSetTfFlags: [Getter],
+  NFTokenCreateOfferFlags: [Getter],
+  NFTokenMintFlags: [Getter],
+  OfferCreateFlags: [Getter],
+  PaymentFlags: [Getter],
+  PaymentChannelClaimFlags: [Getter],
+  TrustSetFlags: [Getter],
+  getBalanceChanges: [Getter],
+  dropsToXrp: [Getter],
+  xrpToDrops: [Getter],
+  hasNextPage: [Getter],
+  rippleTimeToISOTime: [Getter],
+  isoTimeToRippleTime: [Getter],
+  rippleTimeToUnixTime: [Getter],
+  unixTimeToRippleTime: [Getter],
+  percentToQuality: [Getter],
+  decimalToQuality: [Getter],
+  percentToTransferRate: [Getter],
+  decimalToTransferRate: [Getter],
+  transferRateToDecimal: [Getter],
+  qualityToDecimal: [Getter],
+  isValidSecret: [Getter],
+  isValidAddress: [Getter],
+  hashes: [Getter],
+  deriveKeypair: [Getter],
+  deriveAddress: [Getter],
+  deriveXAddress: [Getter],
+  signPaymentChannelClaim: [Getter],
+  verifyKeypairSignature: [Getter],
+  verifyPaymentChannelClaim: [Getter],
+  convertStringToHex: [Getter],
+  convertHexToString: [Getter],
+  classicAddressToXAddress: [Getter],
+  xAddressToClassicAddress: [Getter],
+  isValidXAddress: [Getter],
+  isValidClassicAddress: [Getter],
+  encodeSeed: [Getter],
+  decodeSeed: [Getter],
+  encodeAccountID: [Getter],
+  decodeAccountID: [Getter],
+  encodeNodePublic: [Getter],
+  decodeNodePublic: [Getter],
+  encodeAccountPublic: [Getter],
+  decodeAccountPublic: [Getter],
+  encodeXAddress: [Getter],
+  decodeXAddress: [Getter],
+  encode: [Getter],
+  decode: [Getter],
+  encodeForMultiSigning: [Getter],
+  encodeForSigning: [Getter],
+  encodeForSigningClaim: [Getter],
+  createCrossChainPayment: [Getter],
+  parseNFTokenID: [Getter],
+  XrplError: [Getter],
+  UnexpectedError: [Getter],
+  ConnectionError: [Getter],
+  RippledError: [Getter],
+  NotConnectedError: [Getter],
+  DisconnectedError: [Getter],
+  RippledNotInitializedError: [Getter],
+  TimeoutError: [Getter],
+  ResponseFormatError: [Getter],
+  ValidationError: [Getter],
+  NotFoundError: [Getter],
+  XRPLFaucetError: [Getter],
+  authorizeChannel: [Getter],
+  verifySignature: [Getter],
+  multisign: [Getter]
+}
+```
+
 
 **1.  What is XRP?**
 
+
+``` JavaScript
+/**
+ * @file    primitive.js
+ * @brief   This file is a simple   
+ *          example of how to use the xrpl.js library
+ * @param:  none
+ * @return: none
+ */
+
+// import the xrpl ledger this is the ledger that is used to store all the transactions and the state of the ledger, require is a function that is used to import a module
+const xrpl = require('xrpl');
+
+async function main() {
+    // this is the address of the account that we are going to use in order to send a transaction
+
+    /**
+     * @brief   client is 
+     * @param:  server at address 
+     *          wws://s.altnet.rippletest.net:51233
+     */
+    const client = new xrpl.Client("wss://s.altnet.rippletest.net:51233");
+
+    /**
+     * client.connect() is a promise that resolves when 
+     * the connection is established
+     */
+    await client.connect();
+
+    // response is an object that contains the information about the account
+    // client.request is a function that is used to send a request to the server
+    // paratemers of the request are the command and the account addresss
+    const response = await client.request({
+        // command is the command that we are going to send to the server
+        "command": "account_info",
+        // account is a alphanumeric string that is the address of the account
+        "account": "rPT1Sjq2YGrBMTttX4GZHjKu9dyfzbpAYe",
+        // "validated" is a boolean that is used to specify if we want to get the information from the validated ledger or from the current ledger
+        "ledger_index": "validated"
+    });
+
+    // print the response
+    console.log(response);
+
+    // disconnect from the server
+    client.disconnect()
+
+}
+
+main()
+
+
+```
+
+
+`X prefix for non-national currencies in the ISO 4217 standard.`
 
 XRPL (XRP Ledger) is a Distributed Ledger Technology, is a decentralized, public blockchain led by a global developer community.  The ledger is owned by Ripple Labs Inc.  XRP is a Internationally recognized standarized asset/currency code validated and now compliant by ISO 20022 - ISO 2022 is under SWIFT known to be the Society for Worldwide Interbank Financial Telecommunications which provides a secure messaging system for financial transactions between participating banks.  A Currency Code is a code allocated to a currency by a Maintenance Agency under an international identification scheme as described in the latest edition of the international standard ISO "Codes for the representation of currencies and funds".
 

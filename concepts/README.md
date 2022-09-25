@@ -1,6 +1,105 @@
 # XRP Ledger Consensus Protocol
 
 Understand the pre-requisit intro basics before diving into development on the Blockchain.  All references and info can be sourced here [XRPL Concepts Page](https://xrpl.org/intro-to-consensus.html)
+
+## The Ledger in Action
+
+```JavaScript
+/**
+ * @file    primitive.js
+ * @brief   import the xrpl ledger, used to store 
+ *          all transactions and the state of the ledger
+ */
+const xrpl = require('xrpl');
+console.log(xrpl);
+
+```
+
+
+```console
+morgan% node primitive.js 
+{
+  BroadcastClient: [Getter],
+  Client: [Getter],
+  Wallet: [Getter],
+  keyToRFC1751Mnemonic: [Getter],
+  rfc1751MnemonicToKey: [Getter],
+  LedgerEntry: [Getter],
+  setTransactionFlagsToNumber: [Getter],
+  parseAccountRootFlags: [Getter],
+  validate: [Getter],
+  AccountSetAsfFlags: [Getter],
+  AccountSetTfFlags: [Getter],
+  NFTokenCreateOfferFlags: [Getter],
+  NFTokenMintFlags: [Getter],
+  OfferCreateFlags: [Getter],
+  PaymentFlags: [Getter],
+  PaymentChannelClaimFlags: [Getter],
+  TrustSetFlags: [Getter],
+  getBalanceChanges: [Getter],
+  dropsToXrp: [Getter],
+  xrpToDrops: [Getter],
+  hasNextPage: [Getter],
+  rippleTimeToISOTime: [Getter],
+  isoTimeToRippleTime: [Getter],
+  rippleTimeToUnixTime: [Getter],
+  unixTimeToRippleTime: [Getter],
+  percentToQuality: [Getter],
+  decimalToQuality: [Getter],
+  percentToTransferRate: [Getter],
+  decimalToTransferRate: [Getter],
+  transferRateToDecimal: [Getter],
+  qualityToDecimal: [Getter],
+  isValidSecret: [Getter],
+  isValidAddress: [Getter],
+  hashes: [Getter],
+  deriveKeypair: [Getter],
+  deriveAddress: [Getter],
+  deriveXAddress: [Getter],
+  signPaymentChannelClaim: [Getter],
+  verifyKeypairSignature: [Getter],
+  verifyPaymentChannelClaim: [Getter],
+  convertStringToHex: [Getter],
+  convertHexToString: [Getter],
+  classicAddressToXAddress: [Getter],
+  xAddressToClassicAddress: [Getter],
+  isValidXAddress: [Getter],
+  isValidClassicAddress: [Getter],
+  encodeSeed: [Getter],
+  decodeSeed: [Getter],
+  encodeAccountID: [Getter],
+  decodeAccountID: [Getter],
+  encodeNodePublic: [Getter],
+  decodeNodePublic: [Getter],
+  encodeAccountPublic: [Getter],
+  decodeAccountPublic: [Getter],
+  encodeXAddress: [Getter],
+  decodeXAddress: [Getter],
+  encode: [Getter],
+  decode: [Getter],
+  encodeForMultiSigning: [Getter],
+  encodeForSigning: [Getter],
+  encodeForSigningClaim: [Getter],
+  createCrossChainPayment: [Getter],
+  parseNFTokenID: [Getter],
+  XrplError: [Getter],
+  UnexpectedError: [Getter],
+  ConnectionError: [Getter],
+  RippledError: [Getter],
+  NotConnectedError: [Getter],
+  DisconnectedError: [Getter],
+  RippledNotInitializedError: [Getter],
+  TimeoutError: [Getter],
+  ResponseFormatError: [Getter],
+  ValidationError: [Getter],
+  NotFoundError: [Getter],
+  XRPLFaucetError: [Getter],
+  authorizeChannel: [Getter],
+  verifySignature: [Getter],
+  multisign: [Getter]
+}
+```
+
 ## Network Protocols
 
 Before we establish what the XRP Ledger Consensus Protocol is we need to first establish a basic understand on what a **communication/network protocol** is.  A protocol is a system of rules that allows two or more communications systems to transmit infomation/data via any kind of variation of a physical quantity.  The protocol defines a set of...
@@ -90,4 +189,3 @@ Analysis of the XRP Ledger Consensus Protocol
 A detailed and updated analysis of the XRP Ledger consensus algorithm and its safety and liveness properties.
 
 
-### Apps and Services
