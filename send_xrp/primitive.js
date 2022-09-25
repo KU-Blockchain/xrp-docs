@@ -4,20 +4,22 @@
  *          As an example of how to use the xrpl.js library
  */
 
-// import the xrpl ledger this is the ledger that is used to store all the transactions and the state of the ledger, require is a function that is used to import a module
+// import the xrpl ledger this is the ledger that is used to store all the transactions and the state of the ledger, 
+// require is a function that is used to import a module
 const xrpl = require('xrpl');
 
 async function main() {
-    // this is the address of the account that we are going to use in order to send a transaction
+
 
     /**
      * @brief   client is 
-     * @param:  server at address 
+     * @param   server is the address of the server that we are connecting to 
      *          wws://s.altnet.rippletest.net:51233
      *          this is the address of the server that we are going to use to send the 
      *          transaction
      *          rippletest is a test network that is used to test the transactions
-     *          before sending them to the main network, thus this is a test transaction
+     *          before sending them to the main network, thus this is a test transactio
+     *          this is the address of the account that we are going to use in order to send a transaction
      * 
      */
     const client = new xrpl.Client("wss://s.altnet.rippletest.net:51233");

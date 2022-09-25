@@ -102,33 +102,9 @@ morgan% node primitive.js
 
 ## Network Protocols
 
-Before we establish what the XRP Ledger Consensus Protocol is we need to first establish a basic understand on what a **communication/network protocol** is.  A protocol is a system of rules that allows two or more communications systems to transmit infomation/data via any kind of variation of a physical quantity.  The protocol defines a set of...
+Before we establish what the XRP Ledger Consensus Protocol is we need to first establish a basic understand on what a **communication/network protocol** is.  A protocol is a system of rules that allows two or more communications systems to transmit infomation/data via any kind of variation of a physical quantity.  The protocol defines a set of rules, syntax, semantics, synchronization
 
-1. rules
-2. syntax
-3. semantics
-4. synchronization
-
-... of communication and possible error recovery methods.  Protocols in our case for the Consensus for XRP blockchain will be implemented by software.  Communication systms use well-defined formats for exchanging various messages.  Each of which has a specific meaning to elicit a response from a range of possble responses pre-determined for that particular situation.  The specified behavior for parties is independent of how it is to be implemented.  Communication protocols in general have to be agreeed upon for all parties involed.  In order to reach an agreement/consensus - a protocol may be developed into a technical standard / specification.  Multiple protocols often describe different aspects of a single communication. A group of protocols designed to work together is known as a protocol suite; when implemented in software they are a protocol stack.
-
-**Protocol vs Programming Language**
-
-> _**Protocols** are to communication what **Programming Languages** are to computations_
-
-**Example Protocols**
-
-1.  **SMTP** Simple Mail Transfer Protocol
-
-    An internet standard communication protocol for electronic mail transmission.  Mail servers and other message transfer agents use SMTP to send and recieve mail messages.
-
-2.  **HTTPS** Hypertext Transfer Protocol
-
-    An application layer protocol in the Internet Protocol suite model for distributed, collaborative, hypermedia information sustems.  HTTP is the foundation of data communication for the World Wide Web, where hypertext documents include hyperlinks to other resoruces that users can easily access, (e.g. a mouse click by tapping the screen in a web browser)
-
-3.  **SMS** Short Message Service
-
-    Is a texting message service component of most telephone, internet, and mobile device systems.  It uses standardized communication protocols that let mobile devies excange short text messages and is an intermediary service thart can facilitate a text-to-voice conversion to be sent to landlines.  
-
+... of communication and possible error recovery methods.  Protocols in our case for the Consensus for XRP blockchain will be implemented by software.  
 ##  Consensus Overview
 
 Consensus is the most important property of any decentralized payment system. In traditional centralized payment systems, one authoritative administrator gets the final say in how and when payments occur. Decentralized systems, by definition, don't have an administrator to do that. Instead, decentralized systems like the XRP Ledger define a set of rules all participants follow, so every participant can agree on the exact same series of events and their outcome at any point in time. We call this set of rules a consensus protocol.
