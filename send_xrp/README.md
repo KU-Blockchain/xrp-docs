@@ -39,6 +39,9 @@ found 0 vulnerabilities
 
 ### Test Transaction on rippletest.net
 
+![what is a url and how is this specific request identified]()
+
+We will come back here later after working on the JavaScript lecture on javascript and the web browser to get a more indepth understanding of urls, servers, and what have you 
 
 `wss://s.altnet.rippletest.net:51233`
 

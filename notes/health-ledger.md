@@ -1,5 +1,13 @@
 # Blockchain Health Ledger
 
+A Validator is essentially another server/daemon node that verifying and incrementing the ledger index with specific blocks.
+
+What is a test bed?  A test bed is like a work station?
+
+An Offical Ripple Validator is present here at KU ITTC.
+
+A testbed in software development is a a sandbox used for testbedding certain methods of a particular module.  Such as a function, class, or library in an isolated fashion.  It maty be used as a proof of concept or when a new module is tested apart from the program.  A good example 
+
 Attestation and Appraisal 
 
 Manifests configure components
