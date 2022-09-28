@@ -91,3 +91,22 @@ morgan % node test.js
 morgan%
 
 ```
+### Key Value Pairs of `response`
+
+Account Data
+
+Account 
+
+Balance
+
+Flags
+
+LedgerEntryTag
+
+OwnerCount
+
+PreviousTxnID
+
+PreviousTxnLgr
+
+Sequence

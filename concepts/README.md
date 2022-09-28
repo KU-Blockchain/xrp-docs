@@ -15,7 +15,6 @@ console.log(xrpl);
 
 ```
 
-
 ```console
 morgan% node primitive.js 
 {
@@ -155,13 +154,19 @@ An XRP ledger processes transactions in blocks called "ledger versions".  Each l
 
 ### Software Ecosystem
 
+
+![](https://xrpl.org/img/ecosystem.svg)
+
+The XRP Ledger is a deeply layered ecosystem of software projects powering and enabling an Internet of Value.  
+
 1.  Apps & Services
 2.  Middleware APIs
-
 ### Consensus Research
 
 Analysis of the XRP Ledger Consensus Protocol 
 
 A detailed and updated analysis of the XRP Ledger consensus algorithm and its safety and liveness properties.
+
+
 
 
