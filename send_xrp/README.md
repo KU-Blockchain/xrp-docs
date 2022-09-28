@@ -93,6 +93,9 @@ morgan%
 ```
 ### Key Value Pairs of `response`
 
+Id
+
+Result
 Account Data
 
 Account 
@@ -110,3 +113,13 @@ PreviousTxnID
 PreviousTxnLgr
 
 Sequence
+
+index
+
+ledger_hash
+
+ledger_index
+
+validated
+
+type
