@@ -9,8 +9,7 @@ ED25519 key fingerprint is SHA256:Xa64p+wMhc1ke3SR5Zn+XQPKj+MwtV2c9qZb0HTngCY.
 This key is not known by any other names
 Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
 Warning: Permanently added 'veritas.ittc.ku.edu' (ED25519) to the list of known hosts.
-m358b583@veritas.ittc.ku.edu's password:
-Permission denied, please try again.
+
 m358b583@veritas.ittc.ku.edu's password:
 
 Access to electronic resources at the University of Kansas is restricted to
@@ -26,9 +25,13 @@ There was 1 failed login attempt since the last successful login.
 No public/private ECDSA keypair found.
 Generating public/private ecdsa key pair.
 Created directory '/home/m358b583/.ssh'.
+
 Your identification has been saved in /home/m358b583/.ssh/id_ecdsa
 Your public key has been saved in /home/m358b583/.ssh/id_ecdsa.pub
+
 The key fingerprint is:
+
+```
 SHA256:6g3UzCgh9JkNPzFHOYP2aBDmmw04X+yzmh4cGbn9qcc m358b583@veritas
 The key's randomart image is:
 +---[ECDSA 256]---+
@@ -42,4 +45,5 @@ The key's randomart image is:
 |     = +E        |
 |   .+ o..        |
 +----[SHA256]-----+
+```
 [m358b583@veritas ~]$
